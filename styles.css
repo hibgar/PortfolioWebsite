@@ -1,0 +1,171 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300;400&display=swap');
+
+h1,
+h2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+.contact {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 64px;
+}
+
+#projects span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colors */
+:root {
+    --light: #f8f8f8;
+    --dark: #000;
+    --accent: #3e8afd; /* Can change to any they want */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Nav Bar */
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+nav .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 128px;
+}
+
+nav a {
+    font-size: 24px;
+    font-family: 'Roboto';
+
+    color: var(--light);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    font-weight: 300;
+    margin-left: 32px;
+}
+
+nav li a {
+    transition: 0.25s color ease-in-out;
+}
+
+nav li a:hover,
+nav li a:active {
+    color: var(--accent);
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    /* Parallax */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/CSUF_Background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro h1 {
+    font-size: 64px;
+    padding-bottom: 32px;
+}
+
+.intro a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 64px;
+}
+
+.intro span {
+    font-weight: 400;
+}
+
+ion-icon {
+    font-size: 64px;
+    color: var(--light);
+    transition: 0.25s color ease-in-out;
+}
+
+ion-icon:hover {
+    color: var(--accent);
+}
+
+/* Body */
+#about,
+#projects,
+#experience,
+#contact {
+    margin: 64px 128px;
+}
+
+/* About */
+#about .leftContent {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#about .main {
+    margin-bottom: 64px;
+}
+
+.main p {
+    margin-top: 32px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--dark);
+}
