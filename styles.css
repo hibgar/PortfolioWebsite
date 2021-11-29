@@ -23,18 +23,6 @@ h2 {
     text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 64px;
-}
-
-#projects span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Colors */
 :root {
     --light: #f8f8f8;
@@ -54,16 +42,17 @@ html {
 }
 
 body {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 /* Nav Bar */
 nav {
     position: fixed;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(15px);
     z-index: 10;
 }
 
@@ -77,7 +66,7 @@ nav a {
     font-size: 24px;
     font-family: 'Roboto';
 
-    color: var(--light);
+    color: var(--dark);
 }
 
 nav ul {
@@ -106,10 +95,11 @@ nav li a:active {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: var(--light);
 
     /* Parallax */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('img/CSUF_Background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url('img/izayah-ramos-cR05i3WgRlQ-unsplash.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,10 +136,16 @@ ion-icon:hover {
 #projects,
 #experience,
 #contact {
-    margin: 64px 128px;
+    margin: 128px 360px;
 }
 
 /* About */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #about .leftContent {
     display: flex;
     flex-direction: column;
@@ -160,8 +156,90 @@ ion-icon:hover {
     margin-bottom: 64px;
 }
 
+.main h1,
+.leftContent h2,
+#projects h1,
+#experience h1,
+.contact h1 {
+    font-weight: 400;
+}
+
 .main p {
     margin-top: 32px;
+}
+
+.leftContent h2 {
+    margin-bottom: 16px;
+}
+
+.skills {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 16px;
+}
+
+.skills p {
+    font-size: 18px;
+}
+
+#about .img {
+    width: 350px;
+    height: 250px;
+    background-color: gray;
+    filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+}
+
+/* Projects */
+#projects h1 {
+    margin-bottom: 64px;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 64px;
+    margin-bottom: 64px;
+}
+
+.grid-container span {
+    width: 350px;
+    height: 250px;
+    background-color: gray;
+    border-radius: 24px;
+    filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.25));
+    transition: 0.25s all ease-in-out;
+}
+
+.grid-container .one {
+    background-image: url('img/izayah-ramos-cR05i3WgRlQ-unsplash.jpg');
+    background-position: center;
+    background-size: 120%;
+}
+
+.grid-container .one:hover,
+.grid-container .two:hover,
+.grid-container .three:hover,
+.grid-container .four:hover,
+.grid-container .five:hover,
+.grid-container .six:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 8px 40px rgba(0, 0, 0, 0.5));
+}
+
+#projects a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: var(--dark);
+}
+
+#projects a ion-icon {
+    font-size: 32px;
+    margin-left: 8px;
+    color: var(--accent);
 }
 
 /* Footer */
