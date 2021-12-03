@@ -346,3 +346,22 @@ footer p span {
     color: var(--dark);
     font-size: 32px;
 }
+
+@media screen and (max-width: 1850px) {
+    .abt,
+    .proj,
+    .xp,
+    .contact {
+        padding: 128px 128px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .abt .img {
+        width: 250px;
+        height: 250px;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
