@@ -1,113 +1,201 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>STUDENT</title>
 
-        <link rel="stylesheet" href="styles.css">
+        <!-- Stylesheet -->
+        <link rel="Stylesheet" href="styles.css" />
     </head>
+
+    <!-- Nav Bar -->
     <nav>
-        <div class="buttons">
-            <a href="#">NAME HERE</a>
+        <div class="items">
+            <a href="#">STUDENT</a>
 
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience<a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
 
+    <!-- Contents -->
     <body>
+        <!-- Hero Section -->
         <div class="intro">
-            <h1>HI, I'M <span>STUDENT</span></h1>
-            
+            <h1>
+                HI, I'M <span>STUDENT</span>
+            </h1>
+
             <p>
                 I'm a college student studying computer science.
             </p>
-
+            
             <a href="#about">
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </a>
         </div>
 
-        <div id="about">
-            <span class="leftContent">
-				<span class="main">
-					<h1>ABOUT</h1>
-	
-					<p>
-						Lörem ipsum pökunat pekåra. Diara sotul kasösk vabelt i tiv. 
-						Der pan medelskop. Vanat joskap global hektar, suvis jydöde. 
-						Trarösm köttnorm emedan neska. Du kan vara drabbad. 
-					</p>
-				</span>
-	
-				<h2>SKILLS</h2>
-				<span class="skills">
-                    <p>C++</p>
-                    <p>Python</p>
-                    <p>HTML/CSS</p>
-                    <p>JavaScript</p>
-                    <p>Figma</p>
-                    <p>Git</p>
+        <!-- About Section -->
+        <div class="abt" id="about">
+            <!-- Left Side -->
+            <span class="left-container">
+                <span class="top">
+                    <h1>ABOUT</h1>
+    
+                    <p>
+                        Lörem ipsum pökunat pekåra. Diara sotul kasösk vabelt i tiv. 
+                        Der pan medelskop. Vanat joskap global hektar, suvis jydöde. 
+                        Trarösm köttnorm emedan neska. Du kan vara drabbad. 
+                    </p>
                 </span>
-			</span>
+    
+                <span class="bottom">
+                    <h2>SKILLS</h2>
+                
+                    <span class="skills">
+                        <p>C++</p>
+                        <p>Python</p>
+                        <p>HTML/CSS</p>
+                        <p>JavaScript</p>
+                        <p>Figma</p>
+                        <p>Git</p>
+                    </span>
+                </span>
+            </span>
 
+            <!-- Right Side -->
             <div class="img"></div>
         </div>
 
-        <div id="projects">
+        <!-- Projects Section -->
+        <div class="proj" id="projects">
             <h1>PROJECTS</h1>
 
-			<div class="grid-container">
-                <a href="https://google.com">
-                    <span class="one"></span>
+            <!-- Photo Grid -->
+            <span class="grid-container">
+                <a href="#">
+                    <div class="one"></div>
                 </a>
-                <a href="https://google.com">
-                    <span class="two"></span>
+
+                <a href="#">
+                    <div class="two"></div>
                 </a>
-                <a href="https://google.com">
-                    <span class="three"></span>
+
+                <a href="#">
+                    <div class="three"></div>
                 </a>
-                <a href="https://google.com">
-                    <span class="four"></span>
+
+                <a href="#">
+                    <div class="four"></div>
                 </a>
-                <a href="https://google.com">
-                    <span class="five"></span>
+
+                <a href="#">
+                    <div class="five"></div>
                 </a>
-                <a href="https://google.com">
-                    <span class="six"></span>
+
+                <a href="#">
+                    <div class="six"></div>
                 </a>
-            </div>
-            
-            <a href="https://github.com/mikeploythai">
-                <p>Other Projects</p>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </span>
+
+            <!-- GitHub Link -->
+            <a href="https://github.com" class="link">
+                <span>
+                    <p>Other Projects</p>
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
             </a>
         </div>
 
-        <div id="experience">
+        <!-- Experience Section -->
+        <div class="xp" id="experience">
             <h1>EXPERIENCE</h1>
 
             <span>
-                
+                <div class="one">
+                    <span class="top">
+                        <h1>WORK 1</h1>
+    
+                        <h2>DATE-DATE</h2>
+                    </span>
+    
+                    <p>WORKPLACE NAME</p>
+                </div>
+    
+                <div class="two">
+                    <span class="top">
+                        <h1>WORK 2</h1>
+    
+                        <h2>DATE-DATE</h2>
+                    </span>
+    
+                    <p>WORKPLACE NAME</p>
+                </div>
+    
+                <div class="three">
+                    <span class="top">
+                        <h1>WORK 3</h1>
+    
+                        <h2>DATE-DATE</h2>
+                    </span>
+    
+                    <p>WORKPLACE NAME</p>
+                </div>
             </span>
         </div>
 
+        <!-- Contact Section -->
         <div class="contact" id="contact">
-            <h1>CONTACT</h1>
+            <div class="top">
+                <h1>CONTACT</h1>
+
+                <p>{EXPLAIN WHAT TO CONTACT YOU FOR}</p>
+            </div>
+
+            <div class="btn">
+                <a href="mailto:">
+                    Let's Talk!
+                </a>
+            </div>
+
+            <a href="#" class="up">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </a>
         </div>
-        
+
         <!-- Icon Pack - Ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2021 NAME HERE</p>
+        <p>DESIGNED & DEVELOPED BY <span>STUDENT</span></p>
+
+        <!-- Social Media -->
+        <span class="socials">
+            <a href="https://linkedin.com">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </span>
     </footer>
 </html>

@@ -7,11 +7,6 @@ h2 {
     font-weight: 300;
 }
 
-p {
-    font-family: 'Noto Serif';
-    font-size: 24px;
-}
-
 h1 {
     font-size: 48px;
 }
@@ -19,17 +14,20 @@ h1 {
 h2 {
     font-size: 32px;
 }
-.contact {
-    text-align: center;
+
+p {
+    font-family: 'Noto Serif';
+    font-size: 24px;
 }
 
 /* Colors */
 :root {
     --light: #f8f8f8;
     --dark: #000;
-    --accent: #3e8afd; /* Can change to any they want */
+    --accent: #3e8afd; /* Change this to whatever you want */
 }
 
+/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -46,48 +44,44 @@ body {
     color: var(--dark);
 }
 
+/* Icon Pack */
+ion-icon {
+    font-size: 64px;
+    color: var(--light);
+}
+
 /* Nav Bar */
 nav {
     position: fixed;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(248, 248, 248, 0.5);
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.25));
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     z-index: 10;
 }
 
-nav .buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 128px;
-}
-
 nav a {
-    font-size: 24px;
     font-family: 'Roboto';
-
+    font-size: 24px;
     color: var(--dark);
 }
 
-nav ul {
+nav .items {
     display: flex;
+    justify-content: space-between;
+    padding: 1.5em 8em;
 }
 
-nav li {
+.items ul {
+    display: flex;
     font-weight: 300;
+}
+
+.items li {
     margin-left: 32px;
 }
 
-nav li a {
-    transition: 0.25s color ease-in-out;
-}
-
-nav li a:hover,
-nav li a:active {
-    color: var(--accent);
-}
-
-/* Intro */
+/* Hero Section */
 .intro {
     display: flex;
     position: relative;
@@ -97,7 +91,7 @@ nav li a:active {
     min-height: 100vh;
     color: var(--light);
 
-    /* Parallax */
+    /* Parallax Effect */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
         url('img/izayah-ramos-cR05i3WgRlQ-unsplash.jpg');
     background-attachment: fixed;
@@ -108,71 +102,60 @@ nav li a:active {
 
 .intro h1 {
     font-size: 64px;
-    padding-bottom: 32px;
-}
-
-.intro a {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .intro span {
     font-weight: 400;
 }
 
-ion-icon {
-    font-size: 64px;
-    color: var(--light);
-    transition: 0.25s color ease-in-out;
+/* Down Arrow */
+.intro a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 64px;
 }
 
-ion-icon:hover {
-    color: var(--accent);
+/* Sections */
+.abt,
+.proj,
+.xp,
+.contact {
+    padding: 128px 360px;
 }
 
-/* Body */
-#about,
-#projects,
-#experience,
-#contact {
-    margin: 128px 360px;
-}
-
-/* About */
-#about {
+/* About Section */
+.abt {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#about .leftContent {
+.abt h1,
+.abt h2 {
+    font-weight: 400;
+}
+
+.abt h1 {
+    margin-bottom: 32px;
+}
+
+.abt h2 {
+    margin-bottom: 16px;
+}
+
+/* Left Side */
+.abt .left-container {
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 
-#about .main {
+.left-container .top {
     margin-bottom: 64px;
 }
 
-.main h1,
-.leftContent h2,
-#projects h1,
-#experience h1,
-.contact h1 {
-    font-weight: 400;
-}
-
-.main p {
-    margin-top: 32px;
-}
-
-.leftContent h2 {
-    margin-bottom: 16px;
-}
-
-.skills {
+.bottom .skills {
     display: grid;
     justify-content: space-between;
     grid-template-columns: auto auto auto auto auto auto;
@@ -183,19 +166,22 @@ ion-icon:hover {
     font-size: 18px;
 }
 
-#about .img {
+/* Right Side */
+.abt .img {
     width: 350px;
-    height: 250px;
+    height: 350px;
     background-color: gray;
-    filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.25));
     border-radius: 24px;
 }
 
-/* Projects */
-#projects h1 {
+/* Projects Section */
+.proj h1 {
+    font-weight: 400;
     margin-bottom: 64px;
 }
 
+/* Photo Grid */
 .grid-container {
     display: grid;
     justify-content: space-between;
@@ -204,21 +190,16 @@ ion-icon:hover {
     margin-bottom: 64px;
 }
 
-.grid-container span {
+.grid-container div {
     width: 350px;
     height: 250px;
     background-color: gray;
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.25));
     border-radius: 24px;
-    filter: drop-shadow(0 6px 30px rgba(0, 0, 0, 0.25));
     transition: 0.25s all ease-in-out;
 }
 
-.grid-container .one {
-    background-image: url('img/izayah-ramos-cR05i3WgRlQ-unsplash.jpg');
-    background-position: center;
-    background-size: 120%;
-}
-
+/* Grid Animation */
 .grid-container .one:hover,
 .grid-container .two:hover,
 .grid-container .three:hover,
@@ -229,21 +210,139 @@ ion-icon:hover {
     filter: drop-shadow(0 8px 40px rgba(0, 0, 0, 0.5));
 }
 
-#projects a {
+.grid-container .one {
+    background-image: url('img/proj/CSUF_Background.png');
+    background-position: center;
+    background-size: 150%;
+}
+
+.grid-container .two {
+    background-image: url('img/proj/CSUF_Background.png'); /* You can change this */
+    background-position: center;
+    background-size: 150%;
+}
+
+/* GitHub Link */
+.link span {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     color: var(--dark);
 }
 
-#projects a ion-icon {
+.link ion-icon {
     font-size: 32px;
-    margin-left: 8px;
+    color: var(--accent);
+    padding-left: 8px;
+}
+
+/* Experience Section */
+.xp h1 {
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+.xp span {
+    display: flex;
+    flex-direction: column;
+}
+
+.xp span h1 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.xp span h2 {
+    font-size: 24px;
+}
+
+.xp p {
+    font-size: 18px;
+}
+
+.xp span div {
+    margin-bottom: 32px;
+}
+
+.xp .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h1 {
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.contact .top {
+    margin-bottom: 64px;
+}
+
+/* Buttons */
+.btn a {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: var(--accent);
+    filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    color: var(--light);
+    font-size: 18px;
+    margin-bottom: 64px;
+}
+
+.contact .up {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 64px;
+}
+
+.contact ion-icon {
     color: var(--accent);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 128px;
+}
+
+footer p {
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+footer p span {
+    font-weight: 400;
+}
+
+/* Icons */
+.socials {
+    display: flex;
+    align-content: center;
+}
+
+.socials a {
+    margin-left: 32px;
+}
+
+.socials ion-icon {
+    color: var(--dark);
+    font-size: 32px;
 }
