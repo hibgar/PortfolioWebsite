@@ -24,7 +24,8 @@ p {
 :root {
     --light: #f8f8f8;
     --dark: #000;
-    --accent: #3e8afd; /* Change this to whatever you want */
+    --accent: #000;
+    /*--accent: #3e8afd;  Change this to whatever you want */
 }
 
 /* Global */
@@ -93,7 +94,7 @@ nav .items {
 
     /* Parallax Effect */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-        url('img/izayah-ramos-cR05i3WgRlQ-unsplash.jpg');
+        url('img/turtle.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,11 +169,13 @@ nav .items {
 
 /* Right Side */
 .abt .img {
+    background-image: url('img/profile.png');
     width: 350px;
     height: 350px;
     background-color: gray;
     filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.25));
     border-radius: 24px;
+    background-size:cover;
 }
 
 /* Projects Section */
@@ -217,7 +220,7 @@ nav .items {
 }
 
 .grid-container .two {
-    background-image: url('img/proj/CSUF_Background.png'); /* You can change this */
+    background-image: url('img/proj/proj_our_world.png'); /* You can change this */
     background-position: center;
     background-size: 150%;
 }
