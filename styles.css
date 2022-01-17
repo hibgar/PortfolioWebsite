@@ -214,13 +214,13 @@ nav .items {
 }
 
 .grid-container .one {
-    background-image: url('img/proj/CSUF_Background.png');
+    background-image: url('img/proj/NASA.png');
     background-position: center;
     background-size: 150%;
 }
 
 .grid-container .two {
-    background-image: url('img/proj/proj_our_world.png'); /* You can change this */
+    background-image: url('img/proj/proj_our_world.png');
     background-position: center;
     background-size: 150%;
 }
