@@ -3,7 +3,6 @@
 
 h1,
 h2 {
-    font-family: 'Roboto';
     font-weight: 300;
 }
 
@@ -16,7 +15,6 @@ h2 {
 }
 
 p {
-    font-family: 'Noto Serif';
     font-size: 24px;
 }
 
@@ -38,6 +36,7 @@ p {
 
 html {
     scroll-behavior: smooth;
+    font-family:'Poppins';
 }
 
 body {
@@ -62,7 +61,6 @@ nav {
 }
 
 nav a {
-    font-family: 'Roboto';
     font-size: 24px;
     color: var(--dark);
 }
@@ -169,7 +167,7 @@ nav .items {
 
 /* Right Side */
 .abt .img {
-    background-image: url('img/profile.png');
+    background-image: url('img/headshot.jpg');
     width: 350px;
     height: 350px;
     background-color: gray;
@@ -327,7 +325,6 @@ footer {
 
 footer p {
     font-weight: 300;
-    font-family: 'Roboto';
     font-size: 18px;
 }
 
@@ -368,3 +365,34 @@ footer p span {
         grid-template-columns: auto auto;
     }
 }
+
+
+
+/* Animation */
+
+.tagline {
+    border-right: solid 5px rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-size: 28px;
+    color: rgba(255,255,255,.70);
+  }
+
+.tagline {
+    animation: animated-text 4s linear 1s 1 normal both,
+               animated-cursor 600ms linear infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 672px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
