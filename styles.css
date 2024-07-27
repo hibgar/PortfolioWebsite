@@ -42,6 +42,7 @@ html {
 body {
     background-color: var(--light);
     color: var(--dark);
+    color: white;
 }
 
 /* Icon Pack */
@@ -128,8 +129,11 @@ nav .items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
-
+.belowbanner {
+    background-image: linear-gradient(rgb(10,10,10,1), rgba(15, 15, 15,1));
+}
 .abt h1,
 .abt h2 {
     font-weight: 400;
@@ -177,9 +181,14 @@ nav .items {
 }
 
 /* Projects Section */
+.proj p {
+    color: white;
+}
+
 .proj h1 {
     font-weight: 400;
     margin-bottom: 64px;
+    color: white;
 }
 
 /* Photo Grid */
@@ -218,6 +227,18 @@ nav .items {
 }
 
 .grid-container .two {
+    background-image: url('img/proj/kozy.png');
+    background-position: left top;
+    background-size: 150%;
+}
+
+.grid-container .three {
+    background-image: url('img/proj/game.png');
+    background-position: center;
+    background-size: 150%;
+}
+
+.grid-container .four {
     background-image: url('img/proj/proj_our_world.png');
     background-position: center;
     background-size: 150%;
@@ -233,7 +254,7 @@ nav .items {
 
 .link ion-icon {
     font-size: 32px;
-    color: var(--accent);
+    color: var(--light);
     padding-left: 8px;
 }
 
@@ -297,10 +318,10 @@ nav .items {
 .btn a {
     display: inline-block;
     padding: 12px 32px;
-    background-color: var(--accent);
+    background-color: var(--light);
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    color: var(--light);
+    color: var(--dark);
     font-size: 18px;
     margin-bottom: 64px;
 }
@@ -312,7 +333,7 @@ nav .items {
 }
 
 .contact ion-icon {
-    color: var(--accent);
+    color: var(--light);
 }
 
 /* Footer */
@@ -326,6 +347,7 @@ footer {
 footer p {
     font-weight: 300;
     font-size: 18px;
+    color: gray;
 }
 
 footer p span {
